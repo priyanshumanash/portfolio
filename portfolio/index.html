@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Priyanshu Manash — Security</title>
+<meta name="description" content="Priyanshu Manash — SOC/DFIR, GRC, penetration testing, cloud and AI security. Projects, certifications and record.">
+<meta property="og:title" content="Priyanshu Manash — Security">
+<meta property="og:image" content="assets/banner-1200.jpg">
+<meta name="theme-color" content="#0b0a09">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="#top"><span class="logo-mark">PM</span> Manash</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="main-nav" id="main-nav" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#record">Record</a>
+      <a href="#writing">Writing</a>
+      <a href="#misc">Misc</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="banner" aria-labelledby="name">
+    <div class="banner-photo" role="img" aria-label="Portrait of Priyanshu Manash"></div>
+    <div class="banner-shade"></div>
+    <div class="container">
+      <div class="banner-copy">
+        <p class="label" id="eyebrow"></p>
+        <h1 class="name" id="name"></h1>
+        <p class="intro" id="intro"></p>
+        <p class="target"><span class="label">Seeking</span><span id="seeking"></span></p>
+        <div class="actions">
+          <a class="button primary" href="#work">View projects</a>
+          <a class="button" href="#certifications">Certifications</a>
+          <a class="button" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <dl class="fact-row" id="facts"></dl>
+    </div>
+  </section>
+
+  <div class="strip"><div class="container" id="strip"></div></div>
+
+  <section class="section" id="work" aria-labelledby="work-title">
+    <div class="container">
+      <div class="section-top">
+        <div><p class="label">01 — Work</p><h2 class="section-title" id="work-title">Selected work</h2></div>
+        <p class="section-note">Labs and simulations are labelled as such, and team projects say what my part was.</p>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Filter projects by domain"></div>
+      <p class="track-note" id="track-note" aria-live="polite"></p>
+      <div id="project-list"></div>
+    </div>
+  </section>
+
+  <section class="section" id="certifications" aria-labelledby="cert-title">
+    <div class="container">
+      <div class="section-top">
+        <div><p class="label">02 — Credentials</p><h2 class="section-title" id="cert-title">Certifications</h2></div>
+        <p class="section-note">Each badge links to its Credly record, where it can be verified.</p>
+      </div>
+      <div class="cert-grid" id="cert-grid"></div>
+      <div class="wins" id="wins"></div>
+    </div>
+  </section>
+
+  <section class="section" id="record" aria-labelledby="record-title">
+    <div class="container">
+      <div class="section-top">
+        <div><p class="label">03 — Record</p><h2 class="section-title" id="record-title">Where the work has been</h2></div>
+      </div>
+      <div class="record">
+        <ul class="timeline" id="timeline"></ul>
+        <div class="side">
+          <h3 class="label">Study</h3>
+          <ul class="edu" id="edu"></ul>
+          <div id="cv-wrap"><h3 class="label" style="margin-top:2rem">CV by role</h3><div class="cv-links" id="cv-links"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="writing" aria-labelledby="writing-title">
+    <div class="container">
+      <div class="section-top">
+        <div><p class="label">04 — Writing</p><h2 class="section-title" id="writing-title">Notes from building</h2></div>
+        <a class="button" id="all-posts" href="#" target="_blank" rel="noopener">All essays on Medium ↗</a>
+      </div>
+      <div class="posts" id="posts"></div>
+    </div>
+  </section>
+
+  <section class="section" id="misc" aria-labelledby="misc-title">
+    <div class="container">
+      <div class="section-top">
+        <div><p class="label">05 — Misc</p><h2 class="section-title" id="misc-title">Beyond the brief</h2></div>
+        <p class="section-note">Events, competitions and things learned outside the main tracks.</p>
+      </div>
+      <div class="misc-list" id="misc-list"></div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container contact">
+      <div>
+        <p class="label">06 — Contact</p>
+        <h2 class="section-title" id="contact-title">Write.</h2>
+        <p class="section-note" style="margin-top:1rem">For a role, a collaboration, or a question about something here.</p>
+        <a class="email" id="email" href="#"></a>
+        <div class="socials" id="socials"></div>
+      </div>
+      <form class="note-form" id="note-form">
+        <label>Name <input name="name" required autocomplete="name"></label>
+        <label>Email <input name="email" type="email" required autocomplete="email"></label>
+        <label>Note <textarea name="note" required minlength="20" maxlength="2000"></textarea></label>
+        <p class="hint">Nothing is stored. This opens the note in your mail app.</p>
+        <button class="button primary" type="submit">Prepare note</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><span>© <span id="year"></span> Priyanshu Manash · Dubai</span><a href="#top">Back to top ↑</a></div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
